@@ -1,201 +1,273 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
+    <title>Anand Kumar</title>
+    <meta name="description" content="Anand Kumar - PhD Research Scholar in IEOR at IIT Bombay">
     <meta name="author" content="Anand Kumar">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Anand Kumar">
+    <meta property="og:title" content="Anand Kumar">
+    <meta property="og:url" content="https://berryoptml.github.io/">
+    <meta property="og:description" content="Anand Kumar - PhD Research Scholar in IEOR at IIT Bombay">
+    <link rel="canonical" href="https://berryoptml.github.io/">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/no-js/g, '') + ' js ';
+    </script>
+
+    <!-- For all browsers -->
     <link rel="stylesheet" href="assets/css/academicons.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <!-- MathJax -->
+
     <script type="text/javascript" id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-    <title>Anand Kumar</title>
-    <meta name="description" content="Academic homepage of Anand Kumar, PhD Research Scholar and PMRF Fellow in IEOR at IIT Bombay.">
   </head>
+
   <body class="layout--home">
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="index.html">Anand Kumar</a>
-        <ul class="visible-links">
-          <li class="masthead__menu-item active"><a href="index.html">Home</a></li>
-          <li class="masthead__menu-item "><a href="publications.html">Publications</a></li>
-          <li class="masthead__menu-item "><a href="talks.html">Talks</a></li>
-          <li class="masthead__menu-item "><a href="teaching.html">Teaching</a></li>
-          <li class="masthead__menu-item "><a href="cv.html">CV</a></li>
-          <li class="masthead__menu-item "><a href="about.html">About</a></li>
-        </ul>
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+        <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+        <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+      </ul>
+    </nav>
+
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <a class="site-title" href="index.html">
+              Anand Kumar
+            </a>
+            <ul class="visible-links">
+              <li class="masthead__menu-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="publications.html">Publications</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="talks.html">Talks</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="teaching.html">Teaching</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="about.html">About</a>
+              </li>
+            </ul>
+            <button class="greedy-nav__toggle hidden" type="button">
+              <span class="visually-hidden">Toggle menu</span>
+              <div class="navicon"></div>
+            </button>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
     <div class="initial-content">
       <div id="main" role="main">
         <div class="archive">
+          <h1 id="page-title" class="page__title"></h1>
 
-          <!-- Hero Section -->
-          <div class="hero-wrapper">
-            <div class="hero-bio">
-              <p>
-                <strong>Anand Kumar</strong> is a doctoral research scholar and 
-                <a href="https://may2020.pmrf.in/" target="_blank" rel="noopener noreferrer"><strong>Prime Minister's Research Fellow (PMRF)</strong></a> 
-                in the <a href="https://ieor.iitb.ac.in/" target="_blank" rel="noopener noreferrer">Department of Industrial Engineering and Operations Research (IEOR)</a> 
-                at the <a href="https://iitb.ac.in" target="_blank" rel="noopener noreferrer"><strong>Indian Institute of Technology Bombay (IIT Bombay)</strong></a>.
-              </p>
-              <p>
-                His research focuses on <strong>bilevel optimization</strong>, <strong>two-timescale algorithms</strong>, <strong>iterative projection algorithms and sparse reconstruction</strong> (such as Kaczmarz-based methods), and <strong>machine learning</strong>, with foundations in <strong>computational mechanics and structural analysis</strong>.
-              </p>
+          <head>
+            <style>
+              .desktop-only {
+                display: block;
+              }
+              .mobile-only {
+                display: none;
+              }
+              /* Mobile View */
+              @media (max-width: 768px) {
+                .desktop-only {
+                  display: none;
+                }
+                .mobile-only {
+                  display: block;
+                }
+              }
+            </style>
+          </head>
 
-              <div class="quote-banner">
-                &ldquo;People who wish to analyze nature without mathematics must settle for reduced understanding.&rdquo;
-                <span class="quote-author">&mdash; Richard P. Feynman</span>
+          <!-- Browser View -->
+          <div class="desktop-only">
+            <div style="display: flex; align-items: center; max-width: 100%; margin: 0 auto;">
+              <!-- Bio -->
+              <div style="flex: 1; font-size: 0.8em; margin-right: 80px;">
+                <p>Anand Kumar is a doctoral research scholar and Prime Minister's Research Fellow (PMRF) in the Department of Industrial Engineering and Operations Research (IEOR) at the Indian Institute of Technology Bombay (IIT Bombay), supervised by Prof. K. S. Mallikarjuna Rao. His research focuses on mathematical optimization, with particular emphasis on bilevel optimization, two-timescale algorithms, and iterative projection algorithms for sparse reconstruction and eigenvalue computation. He is also interested in machine learning and computational mechanics. Previously, he worked as a Machine Learning Engineer at Quantiphi Inc. and an Airframe Intern at Airbus. He completed his Dual Degree (B.Tech and M.Tech) in Civil and Structural Engineering from IIT Kharagpur.</p>
+
+                <!-- Contact -->
+                <div style="text-align: center; margin-top: 50px;">
+                  <a href="https://github.com/berryoptml" target="_blank" rel="noopener noreferrer" style="margin: 0 35px;">
+                    <i class="fab fa-github" style="font-size: 30px;"></i></a>
+                  <a href="https://www.linkedin.com/in/anandkgp/" target="_blank" rel="noopener noreferrer" style="margin: 0 35px;">
+                    <i class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                  <a href="https://twitter.com/anand4k" target="_blank" rel="noopener noreferrer" style="margin: 0 35px;">
+                    <i class="fab fa-twitter" style="font-size: 30px;"></i></a>
+                  <a href="files/cv.pdf" target="_blank" style="margin: 0 35px;">
+                    <i class="ai ai-cv" style="font-size: 30px;"></i></a>
+                </div>
               </div>
 
-              <p>
-                Prior to his graduate research at IIT Bombay, he worked as a <strong>Machine Learning Engineer</strong> at 
-                <a href="https://www.linkedin.com/company/quantiphi/" target="_blank" rel="noopener noreferrer">Quantiphi Inc.</a> (2018&ndash;2019) and completed a research internship at <a href="https://www.airbus.com/" target="_blank" rel="noopener noreferrer">Airbus</a>. 
-                He holds a <strong>Dual Degree (B.Tech + M.Tech)</strong> in Civil &amp; Structural Engineering from the 
-                <a href="https://iitkgp.ac.in" target="_blank" rel="noopener noreferrer"><strong>Indian Institute of Technology Kharagpur</strong></a> (2018).
-              </p>
-
-              <!-- Redacted Contact & Social Icons -->
-              <div class="contact-icons">
-                <a href="https://github.com/berryoptml" target="_blank" rel="noopener noreferrer" title="GitHub: @berryoptml">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/anandkgp/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/anand4k" target="_blank" rel="noopener noreferrer" title="Twitter / X">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="files/cv.pdf" target="_blank" title="Curriculum Vitae (PDF)">
-                  <i class="ai ai-cv"></i>
-                </a>
-                <a href="about.html" title="Affiliation &amp; Institutional Profile">
-                  <i class="fas fa-university"></i>
-                </a>
+              <!-- Image -->
+              <div style="flex: 0 0 320px; margin-right: 40px;">
+                <img src="images/DP.jpg" alt="Anand Kumar" style="width: 320px; border-radius: 50%;">
               </div>
             </div>
 
-            <!-- Profile Image -->
-            <div class="hero-photo-wrap">
-              <img src="images/DP.jpg" alt="Anand Kumar" class="hero-photo">
-            </div>
-          </div>
+            <!-- Fine Horizontal Line -->
+            <hr style="max-width: 100%; margin: 30px auto 0px auto; border: 0.5px solid #ccc;">
 
-          <hr class="fine-divider">
-
-          <!-- Two-column: Research Interests & Education -->
-          <div class="dual-column-grid">
-            <!-- Research Interests -->
-            <div class="section-box">
-              <h3>Research Interests</h3>
-              <ul class="section-list">
-                <li><strong>Bilevel Optimization:</strong> Two-timescale algorithms, well-posed reformulations, and mathematical programs with vanishing constraints.</li>
-                <li><strong>Iterative Algorithms &amp; Sparse Reconstruction:</strong> Projection-based algorithms, randomized Kaczmarz methods, and eigenvalue computation.</li>
-                <li><strong>Machine Learning:</strong> Representation learning, semi-parametric regression with monotone constraints, and alternating minimization.</li>
-                <li><strong>Computational Mechanics:</strong> Finite element analysis (FEM), multiaxial fatigue life prediction, and structural damage detection.</li>
-              </ul>
-            </div>
-
-            <!-- Education -->
-            <div class="section-box">
-              <h3>Education</h3>
-              <ul class="section-list" style="list-style: none; padding-left: 0;">
-                <li class="edu-item">
-                  <div class="edu-degree">Ph.D. in Operations Research (PMRF Fellow)</div>
-                  <div class="edu-institution">Indian Institute of Technology Bombay</div>
-                  <div class="edu-meta">Department of IEOR &bull; Jan 2019 &ndash; Present</div>
-                </li>
-                <li class="edu-item">
-                  <div class="edu-degree">Master of Technology (M.Tech) in Structural Engineering</div>
-                  <div class="edu-institution">Indian Institute of Technology Kharagpur</div>
-                  <div class="edu-meta">Department of Civil Engineering &bull; Dual Degree &bull; 2018</div>
-                </li>
-                <li class="edu-item">
-                  <div class="edu-degree">Bachelor of Technology (B.Tech) in Civil Engineering</div>
-                  <div class="edu-institution">Indian Institute of Technology Kharagpur</div>
-                  <div class="edu-meta">Department of Civil Engineering &bull; Dual Degree &bull; 2018</div>
-                </li>
-              </ul>
+            <!-- Research Interests and Education -->
+            <div style="display: flex; align-items: flex-start; max-width: 100%; margin: 0 auto;">
+              <div style="font-size: 0.8em; margin-right: 200px;">
+                <h3>Research Interests</h3>
+                <ul style="padding-left: 0;">
+                  <li style="margin-left: 20px;">Bilevel Optimization</li>
+                  <li style="margin-left: 20px;">Iterative Algorithms and Sparse Reconstruction</li>
+                  <li style="margin-left: 20px;">Machine Learning</li>
+                  <li style="margin-left: 20px;">Computational Mechanics and Structural Analysis</li>
+                </ul>
+              </div>
+              <div style="font-size: 0.8em;">
+                <h3>Education</h3>
+                <ul style="padding-left: 0;">
+                  <li style="margin-left: 20px;">
+                    <b> PhD in Operations Research, Ongoing (PMRF Fellow) </b> <br>
+                    Indian Institute of Technology Bombay, India
+                  </li>
+                  <li style="margin-left: 20px;">
+                    <b> Master of Technology in Structural Engineering, 2018 </b> <br>
+                    Indian Institute of Technology Kharagpur, India
+                  </li>
+                  <li style="margin-left: 20px;">
+                    <b> Bachelor of Technology in Civil Engineering, 2018 </b> <br>
+                    Indian Institute of Technology Kharagpur, India
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <hr class="fine-divider">
-
-          <!-- Recent News & Upcoming Talks -->
-          <div style="max-width: 1050px; margin: 0 auto;">
-            <h3 style="font-size: 1.22rem; font-weight: 700; color: #09163b; margin-bottom: 1.2rem;">
-              Recent News &amp; Conference Presentations
-            </h3>
-
-            <div class="highlight-card">
-              <div class="card-title">
-                <span class="badge-pill">Conference Talk</span> 5th International Conference on Nonlinear Applied Analysis and Optimization (ICNAAO 2025)
+          <!-- Mobile View -->
+          <div class="mobile-only">
+            <div style="flex-direction: column; text-align: center;">
+              <!-- Image -->
+              <div style="order: 1; margin: 0 auto 20px auto;">
+                <img src="images/DP.jpg" alt="Anand Kumar" style="width: 320px; border-radius: 50%;">
               </div>
-              <div class="card-subtitle">IIT Jodhpur, India &bull; Dec 4&ndash;6, 2025</div>
-              <div class="card-body">
-                Presenting oral paper: <em>&ldquo;Well-Posed Reformulation of Bilevel Programming.&rdquo;</em>
+
+              <!-- Bio -->
+              <div style="order: 3; margin-top: 20px; margin-bottom: 20px; text-align: center; font-size: 0.8em;">
+                <p>Anand Kumar is a doctoral research scholar and Prime Minister's Research Fellow (PMRF) in the Department of Industrial Engineering and Operations Research (IEOR) at the Indian Institute of Technology Bombay (IIT Bombay), supervised by Prof. K. S. Mallikarjuna Rao. His research focuses on mathematical optimization, with particular emphasis on bilevel optimization, two-timescale algorithms, and iterative projection algorithms for sparse reconstruction and eigenvalue computation. He is also interested in machine learning and computational mechanics. Previously, he worked as a Machine Learning Engineer at Quantiphi Inc. and an Airframe Intern at Airbus. He completed his Dual Degree (B.Tech and M.Tech) in Civil and Structural Engineering from IIT Kharagpur.</p>
+
+                <!-- Contact -->
+                <div style="order: 2; margin-top: 20px; text-align: center;">
+                  <a href="https://github.com/berryoptml" target="_blank" rel="noopener noreferrer" style="margin: 0 15px;">
+                    <i class="fab fa-github" style="font-size: 25px;"></i></a>
+                  <a href="https://www.linkedin.com/in/anandkgp/" target="_blank" rel="noopener noreferrer" style="margin: 0 15px;">
+                    <i class="fab fa-linkedin" style="font-size: 25px;"></i></a>
+                  <a href="https://twitter.com/anand4k" target="_blank" rel="noopener noreferrer" style="margin: 0 15px;">
+                    <i class="fab fa-twitter" style="font-size: 25px;"></i></a>
+                  <a href="files/cv.pdf" target="_blank" style="margin: 0 15px;">
+                    <i class="ai ai-cv" style="font-size: 25px;"></i></a>
+                </div>
               </div>
             </div>
 
-            <div class="highlight-card">
-              <div class="card-title">
-                <span class="badge-pill">Conference Talk</span> 22nd Conference on Advances in Continuous Optimization (EUROPT 2025)
+            <!-- Fine Horizontal Line -->
+            <hr style="max-width: 100%; margin: 30px auto 0px auto; border: 0.5px solid #ccc;">
+
+            <!-- Research Interests and Education -->
+            <div style="margin-right: 0; margin-bottom: 30px;">
+              <div style="font-size: 0.8em;">
+                <h3>Research Interests</h3>
+                <ul style="padding-left: 0;">
+                  <li style="margin-left: 20px;">Bilevel Optimization</li>
+                  <li style="margin-left: 20px;">Iterative Algorithms and Sparse Reconstruction</li>
+                  <li style="margin-left: 20px;">Machine Learning</li>
+                  <li style="margin-left: 20px;">Computational Mechanics and Structural Analysis</li>
+                </ul>
               </div>
-              <div class="card-subtitle">University of Southampton, UK &bull; Jun 29 &ndash; Jul 2, 2025</div>
-              <div class="card-body">
-                Presenting oral paper: <em>&ldquo;Lifting and Penalisation Approach for Mathematical Program with Vanishing Constraints.&rdquo;</em>
+              <div style="font-size: 0.8em;">
+                <h3>Education</h3>
+                <ul style="padding-left: 0;">
+                  <li style="margin-left: 20px;">
+                    <b> PhD in Operations Research, Ongoing (PMRF Fellow) </b> <br>
+                    Indian Institute of Technology Bombay, India
+                  </li>
+                  <li style="margin-left: 20px;">
+                    <b> Master of Technology in Structural Engineering, 2018 </b> <br>
+                    Indian Institute of Technology Kharagpur, India
+                  </li>
+                  <li style="margin-left: 20px;">
+                    <b> Bachelor of Technology in Civil Engineering, 2018 </b> <br>
+                    Indian Institute of Technology Kharagpur, India
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="highlight-card">
-              <div class="card-title">
-                <span class="badge-pill">Conference Talk</span> 34th European Conference on Operational Research (EURO 2025)
-              </div>
-              <div class="card-subtitle">University of Leeds, UK &bull; Jun 22&ndash;25, 2025</div>
-              <div class="card-body">
-                Presenting oral paper: <em>&ldquo;Alternating Minimization for Least Square Estimation in Additive Semi-parametric Regression with Monotone Constraints.&rdquo;</em>
-              </div>
-            </div>
+          <!-- Fine Horizontal Line -->
+          <hr style="max-width: 100%; margin: 30px auto 0px auto; border: 0.5px solid #ccc;">
 
-            <div class="highlight-card">
-              <div class="card-title">
-                <span class="badge-pill">Scientific Meeting</span> Data Science: Probabilistic and Optimization Methods II (DSPOM II)
-              </div>
-              <div class="card-subtitle">International Centre for Theoretical Sciences (ICTS-TIFR), Bengaluru &bull; Aug 4&ndash;15, 2025</div>
-              <div class="card-body">
-                Selected to participate in the advanced research program at ICTS-TIFR.
-              </div>
+          <!-- News -->
+          <div style="display: flex; align-items: flex-start; max-width: 100%; margin: 0 auto;">
+            <div style="font-size: 0.8em;">
+              <h3>News</h3>
+              <ul style="padding-left: 0;">
+                <li style="margin-left: 20px;">
+                  <strong>December 4&ndash;6, 2025:</strong>
+                  I will present our work on <strong>Well-Posed Reformulation of Bilevel Programming</strong> at the <a href="https://www.iitj.ac.in/" style="text-decoration: none;">5th International Conference on Nonlinear Applied Analysis and Optimization (ICNAAO 2025)</a> at IIT Jodhpur, India.
+                </li>
+                <li style="margin-left: 20px;">
+                  <strong>August 4&ndash;15, 2025:</strong>
+                  Selected to participate in the advanced research program on <strong>Data Science: Probabilistic and Optimization Methods II (DSPOM II)</strong> at the <a href="https://www.icts.res.in/" style="text-decoration: none;">International Centre for Theoretical Sciences (ICTS-TIFR)</a>, Bengaluru, India.
+                </li>
+                <li style="margin-left: 20px;">
+                  <strong>June 29 &ndash; July 2, 2025:</strong>
+                  I will present our work on <strong>Lifting and Penalisation Approach for Mathematical Program with Vanishing Constraints</strong> at the <a href="https://www.southampton.ac.uk/" style="text-decoration: none;">22nd Conference on Advances in Continuous Optimization (EUROPT 2025)</a> at the University of Southampton, UK.
+                </li>
+                <li style="margin-left: 20px;">
+                  <strong>June 22&ndash;25, 2025:</strong>
+                  I will present our work on <strong>Alternating Minimization for Least Square Estimation in Additive Semi-parametric Regression with Monotone Constraints</strong> at the <a href="https://www.leeds.ac.uk/" style="text-decoration: none;">34th European Conference on Operational Research (EURO 2025)</a> at the University of Leeds, UK.
+                </li>
+                <li style="margin-left: 20px;">
+                  <strong>April 23&ndash;25, 2025:</strong>
+                  Attending the <strong>Workshop on Advances in Data-Driven Optimization</strong> at the <a href="https://www.iima.ac.in/" style="text-decoration: none;">Brij Disa Centre for Data Science and Artificial Intelligence, IIM Ahmedabad</a>, India.
+                </li>
+              </ul>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-<div id="footer" class="page__footer">
-  <div class="page__footer-inner">
-    <div>
-      &copy; 2026 <strong>Anand Kumar</strong> &bull; Indian Institute of Technology Bombay
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-copyright">
+          &copy; 2026 Anand Kumar. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+        </div>
+      </footer>
     </div>
-    <div style="font-size: 0.8rem; color: #8c959f;">
-      Department of Industrial Engineering and Operations Research (IEOR) &bull; Designed in the style of <a href="https://yasminebeck.github.io/" target="_blank" rel="noopener noreferrer">Minimal Mistakes</a>
-    </div>
-  </div>
-</div>
-    <script src="assets/js/nav-toggle.js"></script>
+
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
