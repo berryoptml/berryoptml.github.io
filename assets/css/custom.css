@@ -1,13 +1,124 @@
-/* Clean Minimal Mistakes overrides matching Yasmine Beck */
+/* Coherent Minimalist Typography & Styling */
+
+:root {
+  --base-font: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  --text-color: #09163b;
+  --link-color: #09163b;
+  --border-color: #ccc;
+  --body-font-size: 0.9rem;
+  --body-line-height: 1.65;
+}
+
+body {
+  font-family: var(--base-font);
+  color: var(--text-color);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  background-color: #fafafa;
+}
+
+/* Global coherent heading scales */
+.archive h1.page__title, #page-title {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  color: var(--text-color) !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+  line-height: 1.2 !important;
+}
+
+.archive h2 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--text-color) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.3 !important;
+  border-bottom: none !important;
+}
+
+.archive h3 {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: var(--text-color) !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.6rem !important;
+  border-bottom: none !important;
+}
+
+.archive h4 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--text-color) !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+/* Coherent body & list font sizes */
+.archive p,
+.archive li,
+.archive div,
+.content {
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.archive ul,
+.archive ol {
+  padding-left: 1.25rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.archive li {
+  margin-bottom: 0.6rem;
+  color: var(--text-color);
+}
+
+.archive hr {
+  max-width: 100%;
+  margin: 25px auto;
+  border: 0;
+  border-top: 0.5px solid var(--border-color);
+}
+
+/* Links */
 a {
   color: inherit;
+  text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .greedy-nav a {
+  font-size: 0.95rem;
   text-decoration: none;
 }
+
 .greedy-nav a:hover {
   text-decoration: none;
+}
+
+.site-title {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+}
+
+/* Responsive helpers */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
 }
