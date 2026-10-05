@@ -1,0 +1,56 @@
+[
+  {
+    "date": "December 4, 2025",
+    "duration": "December 4–6, 2025",
+    "lead": "I will present our work on ",
+    "title": "Well-Posed Reformulation of Bilevel Programming",
+    "event": "5th International Conference on Nonlinear Applied Analysis and Optimization (ICNAAO 2025)",
+    "link": "https://www.iitj.ac.in/",
+    "suffix": " at IIT Jodhpur, India."
+  },
+  {
+    "date": "August 4, 2025",
+    "duration": "August 4–15, 2025",
+    "lead": "Selected to participate in the advanced research program ",
+    "title": "Data Science: Probabilistic and Optimization Methods II (DSPOM II)",
+    "event": "International Centre for Theoretical Sciences (ICTS-TIFR)",
+    "link": "https://www.icts.res.in/",
+    "suffix": ", Bengaluru, India."
+  },
+  {
+    "date": "June 29, 2025",
+    "duration": "June 29 – July 2, 2025",
+    "lead": "I will present our work on ",
+    "title": "Lifting and Penalisation Approach for Mathematical Program with Vanishing Constraints",
+    "event": "22nd Conference on Advances in Continuous Optimization (EUROPT 2025)",
+    "link": "https://www.southampton.ac.uk/",
+    "suffix": " at the University of Southampton, UK."
+  },
+  {
+    "date": "June 22, 2025",
+    "duration": "June 22–25, 2025",
+    "lead": "I will present our work on ",
+    "title": "Alternating Minimization for Least Square Estimation in Additive Semi-parametric Regression with Monotone Constraints",
+    "event": "34th European Conference on Operational Research (EURO 2025)",
+    "link": "https://www.leeds.ac.uk/",
+    "suffix": " at the University of Leeds, UK."
+  },
+  {
+    "date": "April 23, 2025",
+    "duration": "April 23–25, 2025",
+    "lead": "Attending the ",
+    "title": "Workshop on Advances in Data-Driven Optimization",
+    "event": "Brij Disa Centre for Data Science and Artificial Intelligence, IIM Ahmedabad",
+    "link": "https://www.iima.ac.in/",
+    "suffix": ", India."
+  },
+  {
+    "date": "July 3, 2023",
+    "duration": "July 3–7, 2023",
+    "lead": "Participated in ",
+    "title": "Data Science: Probabilistic and Optimization Methods (DSPOM I)",
+    "event": "International Centre for Theoretical Sciences (ICTS-TIFR)",
+    "link": "https://www.icts.res.in/",
+    "suffix": ", Bengaluru, India."
+  }
+]
