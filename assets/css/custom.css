@@ -17,7 +17,7 @@ html[data-theme="dark"] {
   --muted: #aab2b5;
   --line: #374146;
   --accent: #78c7cc;
-  --intro-link: #e3b857;
+  --intro-link: #78c7cc;
   --quote-ink: #c8cfce;
   --portrait-contours: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 360'%3E%3Cg fill='none' stroke='%236cc3cf' stroke-opacity='.38' stroke-width='1.1'%3E%3Cpath d='M-12 46C28 10 73 15 93 51c17 31-11 56-40 67C20 131 13 166 41 184c36 24 89 2 102-35'/%3E%3Cpath d='M-6 76c42-32 85-29 111 4 18 23 13 55-16 77-32 25-60 38-48 71 14 38 69 45 105 13'/%3E%3Cpath d='M-4 112c34-22 84-15 105 17 17 27 3 54-28 72-30 17-46 44-27 70 20 28 68 27 101-4'/%3E%3C/g%3E%3Cg fill='none' stroke='%23e2b657' stroke-opacity='.34' stroke-width='1.1'%3E%3Cpath d='M184 37c36 19 56 48 39 77-14 25-49 28-59 55-10 28 18 51 50 45 32-5 54 12 60 39'/%3E%3Cpath d='M220 11c42 27 55 65 28 97-18 22-49 31-47 59 3 34 51 38 70 68'/%3E%3Cpath d='M167 254c28-31 65-24 75 4 9 25-10 45-35 54-27 10-35 32-15 51 21 20 60 13 88-14'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -108,7 +108,40 @@ h2 { margin: 0 0 18px; font-size: clamp(1.6rem, 3vw, 1.85rem); }
 h3 { margin: 0 0 3px; font-size: 16px; font-weight: 600; line-height: 1.5; }
 p { margin: 0 0 20px; }
 
-.quote { width: 100%; margin: 36px 0 42px; padding: 8px 20px; text-align: center; }
+.quote-carousel {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: 146px;
+  margin: 36px 0 42px;
+}
+.quote-carousel .quote {
+  grid-area: 1 / 1;
+  width: 100%;
+  margin: 0;
+  padding: 8px 20px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.quote-carousel .quote.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.quote-dots { display: flex; grid-row: 2; justify-self: center; gap: 8px; padding-top: 5px; }
+.quote-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.quote-dots button.is-active { border-color: var(--accent); background: var(--accent); }
+.quote-dots button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .quote p {
   max-width: 760px;
   margin: 0 auto 10px;
@@ -125,7 +158,6 @@ p { margin: 0 0 20px; }
 .quote-source { display: block; color: inherit; }
 .quote-source:hover { color: inherit; }
 .quote-source:hover cite { color: var(--accent); }
-.quote-arnold { margin: 30px 0 0; }
 
 .intro { padding-bottom: 30px; }
 .intro-row {
@@ -140,8 +172,8 @@ p { margin: 0 0 20px; }
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
   justify-items: center;
+  align-self: stretch;
   position: relative;
-  height: 100%;
   min-height: 0;
   isolation: isolate;
   overflow: visible;
@@ -168,7 +200,7 @@ p { margin: 0 0 20px; }
   object-fit: contain;
 }
 
-.social-links { display: flex; flex: none; gap: 19px; margin-top: 8px; align-self: end; }
+.social-links { display: flex; flex: none; gap: 19px; margin: 0; align-self: end; }
 .social-links a { display: grid; width: 30px; height: 32px; place-items: center; }
 .social-links svg {
   width: 25px;
@@ -259,12 +291,13 @@ footer span { margin-right: auto; }
   .site-name span { font-size: 12px; }
   nav { gap: 17px; }
   nav a { font-size: 14px; }
-  .quote { margin: 28px 0 32px; padding: 0; }
+  .quote-carousel { min-height: 156px; margin: 28px 0 32px; }
+  .quote-carousel .quote { padding: 0; }
   .quote p { max-width: 28rem; font-size: 20px; line-height: 1.45; }
   .intro-row { grid-template-columns: 1fr; gap: 18px; }
   .bio { font-size: 15.5px; line-height: 1.65; }
   .portrait { width: 180px; aspect-ratio: 1; justify-self: center; }
-  .portrait .social-links { justify-content: center; margin-top: 8px; }
+  .portrait .social-links { justify-content: center; }
   .section-grid { grid-template-columns: 1fr; gap: 27px; padding: 28px 0; }
   .section-grid > div + div { padding: 25px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .news { padding-top: 24px; }

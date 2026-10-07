@@ -17,7 +17,11 @@
   </header>
   <main id="main" tabindex="-1" class="home">
     <h1 class="visually-hidden">Anand Kumar — academic homepage</h1>
-    <blockquote class="quote"><a class="quote-source" href="https://mitpress.mit.edu/9780262533416/the-character-of-physical-law/" target="_blank" rel="noopener noreferrer"><p>“People who wish to analyze nature without mathematics must settle for reduced understanding.”</p><cite>— Richard P. Feynman, <span>The Character of Physical Law</span></cite></a></blockquote>
+    <section class="quote-carousel" aria-label="Quotations" data-quote-carousel>
+      <blockquote class="quote is-active"><a class="quote-source" href="https://mitpress.mit.edu/9780262533416/the-character-of-physical-law/" target="_blank" rel="noopener noreferrer"><p>“People who wish to analyze nature without mathematics must settle for reduced understanding.”</p><cite>— Richard P. Feynman, <span>The Character of Physical Law</span></cite></a></blockquote>
+      <blockquote class="quote" aria-hidden="true" inert><a class="quote-source" href="https://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Arnoldonmaths.pdf" target="_blank" rel="noopener noreferrer"><p>“Mathematics is a part of physics. Physics is an experimental science… Mathematics is the part of physics where experiments are cheap.”</p><cite>— Vladimir Arnold, <span>On Teaching Mathematics</span></cite></a></blockquote>
+      <div class="quote-dots" aria-label="Quote navigation"><button class="is-active" type="button" aria-label="Show quote 1" aria-pressed="true"></button><button type="button" aria-label="Show quote 2" aria-pressed="false"></button></div>
+    </section>
     <section class="intro" aria-label="Introduction">
       <div class="intro-row">
         <p class="bio">I am a doctoral research scholar in the Department of Industrial Engineering and Operations Research at <a href="https://www.iitb.ac.in/">IIT Bombay</a>, where my research was partly supported by the Prime Minister’s Research Fellowship. I am supervised by <a href="https://www.ieor.iitb.ac.in/~mallik">Prof. K. S. Mallikarjuna Rao</a>. My research focuses on mathematical optimization, with particular emphasis on bilevel optimization, two-timescale algorithms, and iterative projection algorithms for sparse reconstruction and eigenvalue computation. I am also interested in machine learning and computational mechanics. Previously, I worked as a Machine Learning Engineer at <a href="https://quantiphi.com/">Quantiphi Inc.</a> and an Airframe Intern at <a href="https://www.airbus.com/">Airbus</a>. I received my bachelor’s degree from <a href="https://www.iitkgp.ac.in/">IIT Kharagpur</a>.</p>
@@ -28,7 +32,6 @@
           <a href="https://www.linkedin.com/in/anandkgp/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M7 10v7M7 7v.1M11 17v-7m0 3c0-4 6-4 6 0v4"/></svg></a>
         </div></div>
       </div>
-      <blockquote class="quote quote-arnold"><a class="quote-source" href="https://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Arnoldonmaths.pdf" target="_blank" rel="noopener noreferrer"><p>“Mathematics is a part of physics. Physics is an experimental science… Mathematics is the part of physics where experiments are cheap.”</p><cite>— Vladimir Arnold, <span>On Teaching Mathematics</span></cite></a></blockquote>
     </section>
     <section class="section-grid" aria-label="Research interests and education">
       <div><h2>Research interests</h2><ul class="plain-list"><li>Bilevel optimization</li><li>Incentive design</li><li>Sparse reconstruction</li><li>Optimal control</li></ul><a href="research.html">Research &amp; publications →</a></div>
@@ -36,6 +39,7 @@
     </section>
     <section class="news"><div class="section-heading"><h2>News</h2><a href="news.html">All news →</a></div><div data-news-limit="3"></div></section>
     <script src="assets/js/news.js?v=2" defer></script>
+    <script src="assets/js/quote-carousel.js" defer></script>
   </main>
   <footer><span>© 2026 Anand Kumar</span><a href="mailto:anand.kumar@iitb.ac.in">Email</a><a href="privacy.html">Website details &amp; privacy</a></footer>
 </body>
