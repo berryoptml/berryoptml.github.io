@@ -106,7 +106,7 @@ h2 { margin: 0 0 18px; font-size: clamp(1.6rem, 3vw, 1.85rem); }
 h3 { margin: 0 0 3px; font-size: 16px; font-weight: 600; line-height: 1.5; }
 p { margin: 0 0 20px; }
 
-.quote { margin: 36px 0 42px; padding: 8px 20px; text-align: center; }
+.quote { width: 100%; margin: 36px 0 42px; padding: 8px 20px; text-align: center; }
 .quote p {
   max-width: 760px;
   margin: 0 auto 10px;
@@ -119,6 +119,11 @@ p { margin: 0 0 20px; }
   letter-spacing: -.012em;
 }
 .quote cite { color: var(--muted); font-size: 13px; font-style: normal; letter-spacing: .01em; }
+.quote cite span { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.quote-source { display: block; color: inherit; }
+.quote-source:hover { color: inherit; }
+.quote-source:hover cite { color: var(--accent); }
+.quote-arnold { margin: 30px 0 0; }
 
 .intro { padding-bottom: 30px; }
 .intro-row {
@@ -130,8 +135,10 @@ p { margin: 0 0 20px; }
 .bio { margin: 0; }
 .bio a { color: var(--intro-link); text-decoration: none; }
 .portrait {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 0;
   isolation: isolate;
@@ -150,12 +157,13 @@ p { margin: 0 0 20px; }
   position: relative;
   z-index: 1;
   display: block;
-  width: 84%;
-  height: 84%;
+  width: auto;
+  max-width: 84%;
+  height: calc(100% - 46px);
   object-fit: contain;
 }
 
-.social-links { display: flex; gap: 27px; margin-top: 22px; }
+.social-links { display: flex; flex: none; gap: 19px; margin-top: 8px; }
 .social-links a { display: grid; width: 30px; height: 32px; place-items: center; }
 .social-links svg {
   width: 25px;
@@ -251,7 +259,7 @@ footer span { margin-right: auto; }
   .intro-row { grid-template-columns: 1fr; gap: 18px; }
   .bio { font-size: 15.5px; line-height: 1.65; }
   .portrait { width: 180px; aspect-ratio: 1; justify-self: center; }
-  .social-links { justify-content: center; margin-top: 20px; }
+  .portrait .social-links { justify-content: center; margin-top: 8px; }
   .section-grid { grid-template-columns: 1fr; gap: 27px; padding: 28px 0; }
   .section-grid > div + div { padding: 25px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .news { padding-top: 24px; }
