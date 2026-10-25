@@ -133,6 +133,7 @@ p { margin: 0 0 20px; }
   color: var(--muted);
   cursor: pointer;
   place-items: center;
+  transform: rotate(30deg);
 }
 .quote-dice:hover { color: var(--accent); }
 .quote-dice:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
@@ -266,26 +267,6 @@ footer span { margin-right: auto; }
 .teaching-highlight { margin-top: 12px !important; }
 .document .news-list li { margin: 0; }
 
-.profile-links { display: flex; flex-wrap: wrap; gap: 0 15px; margin: -10px 0 34px; }
-.profile-links a + a { padding-left: 15px; border-left: 1px solid var(--line); }
-.research-page > section > h2 { margin-top: 38px; }
-.research-page > section > p { max-width: 48rem; }
-.theme-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 4px; }
-.theme-tags span, .project-status { border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 400; line-height: 1.35; }
-.theme-tags span { padding: 3px 8px; border-radius: 999px; }
-.project { padding: 18px 0 17px; border-top: 1px solid var(--line); }
-.research-page > section > .project:first-of-type { margin-top: 4px; }
-.project h3 { margin: 0; font-weight: 600; }
-.project-status { display: inline-block; margin-left: 8px; padding: 2px 6px; border-radius: 3px; vertical-align: 1px; white-space: nowrap; }
-.project-authors, .presented-at { margin: 7px 0 0; font-size: 15px; line-height: 1.55; }
-.presented-at { color: var(--muted); }
-.research-page details { margin-top: 2px; }
-.research-page summary { color: var(--ink); cursor: pointer; font-weight: 600; }
-.research-page summary:hover { color: var(--accent); }
-.earlier-work-content { padding-top: 14px; }
-.earlier-item + .earlier-item { margin-top: 16px; }
-.earlier-item h3 { margin: 0 0 3px; }
-.earlier-item p { margin: 0; line-height: 1.6; }
 .about-workshops { margin-top: 32px; }
 
 .skip-link {
@@ -322,10 +303,6 @@ footer span { margin-right: auto; }
   .document { padding-top: 30px; }
   .document h2 { margin-top: 30px; }
   .document li { margin-bottom: 14px; }
-  .profile-links { margin-bottom: 29px; }
-  .theme-tags { gap: 7px; }
-  .project { padding: 16px 0; }
-  .project-status { margin-left: 5px; }
   footer { flex-wrap: wrap; gap: 10px 18px; }
   footer span { flex-basis: 100%; }
 }
