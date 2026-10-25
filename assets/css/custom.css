@@ -108,40 +108,32 @@ h2 { margin: 0 0 18px; font-size: clamp(1.6rem, 3vw, 1.85rem); }
 h3 { margin: 0 0 3px; font-size: 16px; font-weight: 600; line-height: 1.5; }
 p { margin: 0 0 20px; }
 
-.quote-carousel {
+.quote-picker {
   display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  min-height: 146px;
+  justify-items: center;
   margin: 36px 0 42px;
 }
-.quote-carousel .quote {
-  grid-area: 1 / 1;
+.quote-picker .quote {
   width: 100%;
   margin: 0;
   padding: 8px 20px;
   text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(5px);
-  transition: opacity 500ms ease, transform 500ms ease;
 }
-.quote-carousel .quote.is-active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-.quote-dots { display: flex; grid-row: 2; justify-self: center; gap: 8px; padding-top: 5px; }
-.quote-dots button {
-  width: 7px;
-  height: 7px;
+.quote-dice {
+  display: grid;
+  width: 30px;
+  height: 30px;
   padding: 0;
-  border: 1px solid var(--muted);
-  border-radius: 50%;
+  border: 1px solid var(--line);
+  border-radius: 5px;
   background: transparent;
+  color: var(--muted);
   cursor: pointer;
+  place-items: center;
 }
-.quote-dots button.is-active { border-color: var(--accent); background: var(--accent); }
-.quote-dots button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.quote-dice:hover { border-color: var(--accent); color: var(--accent); }
+.quote-dice:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.quote-dice svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.4; }
 .quote p {
   max-width: 760px;
   margin: 0 auto 10px;
@@ -291,8 +283,8 @@ footer span { margin-right: auto; }
   .site-name span { font-size: 12px; }
   nav { gap: 17px; }
   nav a { font-size: 14px; }
-  .quote-carousel { min-height: 156px; margin: 28px 0 32px; }
-  .quote-carousel .quote { padding: 0; }
+  .quote-picker { margin: 28px 0 32px; }
+  .quote-picker .quote { padding: 0; }
   .quote p { max-width: 28rem; font-size: 20px; line-height: 1.45; }
   .intro-row { grid-template-columns: 1fr; gap: 18px; }
   .bio { font-size: 15.5px; line-height: 1.65; }

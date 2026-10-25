@@ -20,14 +20,23 @@
         const title = document.createElement('strong');
         const duration = document.createElement('strong');
         duration.className = 'news-duration';
-        const link = document.createElement('a');
-        const url = new URL(entry.link, location.href);
-        if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Unsupported news link');
         title.textContent = entry.title;
         duration.textContent = entry.duration;
-        link.href = entry.link;
-        link.textContent = entry.event;
-        description.append(duration, ' — ', entry.lead, title, ' at the ', link, entry.suffix);
+        description.append(duration, ' — ', entry.lead, title);
+        if (entry.event) {
+          description.append(' at the ');
+          if (entry.link) {
+            const link = document.createElement('a');
+            const url = new URL(entry.link, location.href);
+            if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Unsupported news link');
+            link.href = entry.link;
+            link.textContent = entry.event;
+            description.append(link);
+          } else {
+            description.append(entry.event);
+          }
+        }
+        description.append(entry.suffix);
         row.append(date, description);
         list.append(row);
       }
