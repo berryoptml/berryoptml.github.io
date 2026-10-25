@@ -6,7 +6,7 @@
     const response = await fetch('assets/data/news.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('News unavailable');
     const entries = await response.json();
-    if (!Array.isArray(entries) || entries.some(entry => !['date', 'duration', 'lead', 'title', 'event', 'link', 'suffix'].every(key => typeof entry[key] === 'string'))) throw new Error('Invalid news entries');
+    if (!Array.isArray(entries) || entries.some(entry => !['date', 'lead', 'title', 'event', 'link', 'suffix'].every(key => typeof entry[key] === 'string'))) throw new Error('Invalid news entries');
     for (const container of containers) {
       const list = document.createElement('ul');
       list.className = 'news-list';
@@ -18,11 +18,8 @@
         date.textContent = entry.date;
         const description = document.createElement('span');
         const title = document.createElement('strong');
-        const duration = document.createElement('strong');
-        duration.className = 'news-duration';
         title.textContent = entry.title;
-        duration.textContent = entry.duration;
-        description.append(duration, ' — ', entry.lead, title);
+        description.append(entry.lead, title);
         if (entry.event) {
           description.append(' at the ');
           if (entry.link) {
