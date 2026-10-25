@@ -111,27 +111,30 @@ p { margin: 0 0 20px; }
 .quote-picker {
   display: grid;
   justify-items: center;
+  position: relative;
   margin: 36px 0 42px;
 }
 .quote-picker .quote {
   width: 100%;
   margin: 0;
-  padding: 8px 20px;
+  padding: 8px 42px 8px 20px;
   text-align: center;
 }
 .quote-dice {
   display: grid;
+  position: absolute;
+  right: 8px;
+  bottom: 3px;
   width: 30px;
   height: 30px;
   padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 5px;
+  border: 0;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
   place-items: center;
 }
-.quote-dice:hover { border-color: var(--accent); color: var(--accent); }
+.quote-dice:hover { color: var(--accent); }
 .quote-dice:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .quote-dice svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.4; }
 .quote p {
@@ -284,7 +287,7 @@ footer span { margin-right: auto; }
   nav { gap: 17px; }
   nav a { font-size: 14px; }
   .quote-picker { margin: 28px 0 32px; }
-  .quote-picker .quote { padding: 0; }
+  .quote-picker .quote { padding: 0 38px 0 0; }
   .quote p { max-width: 28rem; font-size: 20px; line-height: 1.45; }
   .intro-row { grid-template-columns: 1fr; gap: 18px; }
   .bio { font-size: 15.5px; line-height: 1.65; }
