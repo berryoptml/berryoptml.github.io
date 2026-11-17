@@ -250,24 +250,25 @@ footer {
 }
 footer span { margin-right: auto; }
 
-.document { min-height: 60vh; padding-top: 46px; }
-.document h2 { margin-top: 36px; margin-bottom: 18px; font-size: 25px; }
-.document h3 { margin-top: 24px; }
-.document ol, .document ul:not(.news-list) { padding-left: 22px; }
-.document li { margin-bottom: 20px; overflow-wrap: anywhere; }
+.document { width: min(calc(100% - 64px), 1000px); min-height: 60vh; padding-top: 42px; }
+.document h1 { margin-bottom: 22px; }
+.document h2 { margin-top: 34px; margin-bottom: 14px; font-size: 23px; }
+.document h3 { margin-top: 20px; }
+.document ol, .document ul:not(.news-list) { padding-left: 21px; }
+.document li { margin-bottom: 12px; overflow-wrap: anywhere; }
 .document p { overflow-wrap: anywhere; }
-.document .citation-list, .document .compact-list { margin: 0; padding-left: 22px; }
-.document .citation-list li { margin: 0 0 10px; line-height: 1.55; }
+.document .citation-list, .document .compact-list { margin: 0; padding-left: 21px; }
+.document .citation-list li { margin: 0 0 12px; line-height: 1.6; }
 .document .working-papers strong { font-weight: 400; }
 .document .conference-list li { padding-left: 2px; }
 .document .conference-list a { font-style: italic; }
-.document .compact-list li { margin: 0 0 5px; line-height: 1.5; }
-.about-teaching { margin-top: 32px; }
-.about-teaching h3 { margin-top: 18px; }
-.teaching-highlight { margin-top: 12px !important; }
+.document .compact-list li { margin: 0 0 7px; line-height: 1.6; }
+.about-teaching { margin-top: 30px; }
+.about-teaching h3 { margin-top: 16px; }
+.teaching-highlight { margin-top: 10px !important; }
 .document .news-list li { margin: 0; }
 
-.about-workshops { margin-top: 32px; }
+.about-workshops { margin-top: 30px; }
 
 .skip-link {
   position: fixed;
@@ -283,6 +284,7 @@ footer span { margin-right: auto; }
 
 @media (max-width: 720px) {
   .site-header, main, footer { width: min(calc(100% - 36px), 600px); }
+  .document { width: min(calc(100% - 36px), 600px); }
   .site-header { display: grid; grid-template-columns: 1fr auto; gap: 13px 16px; padding: 18px 0 17px; }
   .site-name { grid-column: 1 / -1; }
   .site-name { font-size: 23px; }
@@ -301,8 +303,8 @@ footer span { margin-right: auto; }
   .news { padding-top: 24px; }
   .news-list li { grid-template-columns: 94px minmax(0, 1fr); gap: 12px; font-size: 13.5px; line-height: 1.58; }
   .document { padding-top: 30px; }
-  .document h2 { margin-top: 30px; }
-  .document li { margin-bottom: 14px; }
+  .document h2 { margin-top: 28px; }
+  .document li { margin-bottom: 12px; }
   footer { flex-wrap: wrap; gap: 10px 18px; }
   footer span { flex-basis: 100%; }
 }

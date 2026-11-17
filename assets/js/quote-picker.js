@@ -16,6 +16,7 @@
       quote.hidden = !active;
       quote.inert = !active;
       quote.toggleAttribute('aria-hidden', !active);
+      quote.classList.toggle('is-active', active);
     });
     activeIndex = nextIndex;
   };
